@@ -1,0 +1,178 @@
+@import url(./reset.css);
+
+:root{
+    --cinza:#40514e;
+    --azul:#2f89fc;
+    --oceano:#30e3ca;
+    --branco:#f5f5f5;
+    --fundo:#e9e9e9;
+    --fundo-nota:#bcbcbc93;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--fundo);
+}
+
+#warning {
+    display: none;
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    color: black;
+}
+
+
+.cont{
+    padding: 20px 20px;
+    max-width: 100vw;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.main strong{
+    color: var(--azul);
+    font-style: italic;
+}
+
+.main p{
+    margin: 10px 0 10px 0;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--cinza);
+}
+
+.main div{
+    width: 90%;
+}
+
+.main img{
+    width: 90%;
+    max-width: 500px;
+    margin: 15px 0 8px 0;
+}
+
+.call-action {
+    border-radius: 7px;
+    padding: 10px;
+    background-color: var(--azul);
+    cursor: pointer;
+    transition: 0.6s;
+    border: none;
+}
+
+.call-action:hover{
+    transform: scale(1.05);
+}
+
+.call-action a{
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--branco);
+}
+.aside{
+    display: flex;
+    background-color: var(--fundo-nota);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 12px 0;
+    justify-content: center;
+}
+
+.aside p {
+    font-size: 17px;
+    margin-right: 0px;
+    background-color: var(--azul);
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: var(--branco);
+}
+
+.aside h2{
+    font-size: 17px;
+    padding: 5px;
+    color: black;
+    font-weight: bolder;
+}
+
+.regras {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.regras h2{
+    color: var(--azul);
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom:8px;
+}
+
+.regras ul li{
+    font-size:18px ;
+    padding: 0px;
+    margin: 12px;
+    list-style: disc;
+    font-weight: 500;
+}
+
+.sugestao{
+    position: relative;
+
+}
+
+.sugestao img{
+    width: 200px;
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+}
+
+.recordacao{
+    width: 100%;
+    padding: 12px 0;
+}
+
+.recordacao h2{
+    font-size: 28px;
+    color: var(--azul);
+    font-weight: 600;
+}
+
+.recordacao p {
+    font-size: 18px;
+    color: var(--cinza);
+    font-style: italic;
+}
+
+.footer{
+    text-align: center;
+    font-size: 22px;
+    background-color: var(--azul);
+    padding: 20px;
+    color: var(--branco);
+}
+
+.footer h3{
+    font-weight: 800;
+}
